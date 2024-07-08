@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSF part 1</title>
+
+    <style>
+        body 
+        {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: #414141;
+
+        }
+        h1 
+        {
+            color: rgb(255, 255, 255);
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+        }
+
+
+    </style>
+
+
+</head>
+
+ 
+<body>
+
+    <h1>Fundamentals Part 1</h1>
+    <form action="">
+        <label for="" style="color: #7700ff;">Dolphins</label>
+        <input type="text" name="" id="value1dolphin"> <br>
+        <input type="text" name="" id="value2dolphin"> <br>
+        <input type="text" name="" id="value3dolphin"> <br> 
+        <label for="">Kolas</label>
+
+        <input type="text" name="" id="value1kolas"> <br>
+        <input type="text" name="" id="value2kolas"> <br>
+        <input type="text" name="" id="value3kolas"> <br>
+        <button onclick="checkwinner()"> checkwinner </button>
+
+    </form>
+
+    
+</body>
+
+<!-- <script src="equality operators.js"></script> -->
+<script > 
+    function checkwinner ()
+    {
+
+debugger
+        const firstdolphin =  document.getElementById ("value1dolphin") .value ;
+        const firstdolphin1 =  document.getElementById ("value2dolphin") .value ;
+        const firstdolphin2 =  document.getElementById ("value3dolphin") .value ;
+        const firstdolphin4 =  document.getElementById ("value1kolas") .value ;
+        const firstdolphin5 =  document.getElementById ("value2kolas") .value ;
+        const firstdolphin6 =  document.getElementById ("value3kolas") .value ;
+      
+        const avgdolphin = calcavg(firstdolphin , firstdolphin1,firstdolphin2)
+        const avgkolas = calcavg (firstdolphin4, firstdolphin5, firstdolphin6)
+
+        if (avgdolphin >= 2* avgkolas)
+    {
+        alert("winner is dolphin");
+    
+    }
+    else if (avgkolas>=  2* avgkolas)
+    {
+        alert (`winner is kolas`);
+    }
+    else{alert ("no winner")}
+
+
+    }
+    function calcavg (a,b,c)
+    {
+        return (a+b+c)/3
+        
+    }
+</script>
+</html>
