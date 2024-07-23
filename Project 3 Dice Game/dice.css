@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #563ce7, #52d7ee);
+    color: white;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.player-0.player-active
+{
+    background: rgba(117, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+.player-0 {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+.player-1.player-active
+{
+    background: rgba(117, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+.player-1 {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+.player-name {
+    font-size: 1.5rem;
+}
+
+.player-score {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.current-score {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.current-label {
+    font-size: 1rem;
+}
+
+.current-score-value {
+    font-size: 2rem;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.btn-new {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+.btn-roll {
+    grid-column: 1 / -1;
+}
+
+.btn-hold {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+}
+
+.dice {
+    grid-column: 1 / -1;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.player1won
+{
+    background: rgba(43, 255, 0, 0.767);
+    border-radius: 10px;
+    padding: 20px;
+}
+
